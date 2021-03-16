@@ -1,0 +1,488 @@
+/*reset code*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*fonts style*/
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Akaya Telivigala', cursive;
+    -webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+}
+/*header start*/
+.container {
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #000;
+}
+.hamburger-menu {
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+.hamburger-menu .fa-times {
+    display: none;
+}
+.menu-open .hamburger-menu .fa-times {
+    display: block;
+}
+.menu-open .hamburger-menu .fa-bars{
+    display: none;
+}
+.menu-open .nav-list, .menu-open .shop{
+    opacity: 1;
+    transform: scale(1);
+}
+.nav-list, .shop {
+    opacity: 0;
+}
+nav {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+   }
+ul li {
+    display: inline-block;
+    padding-right: 15px;
+}
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Akaya Telivigala', cursive;
+}
+ul li a:hover {
+    color: blue;
+}
+header .shop {
+    display: flex;
+}
+header .shop i {
+    padding: 16px;
+    color: #fff;
+}
+header .shop i:hover {
+    color: blue;
+}
+/*header end*/
+/* start header-back*/
+.header-back {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(..//images/sliderbg.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+.header-back .container {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.header-back h1 {
+    font-size: 80px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 350px 0;
+    font-family: 'Akaya Telivigala', cursive;
+}
+.container .btn-back {
+    margin-top: 300px;
+    margin-left: -200px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: #000;
+    border-radius: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.header-back button:hover {
+    background-color: blue;
+}
+/* end header-back*/
+
+h2 {
+    margin: 150px 0 20px;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.snowboards p {
+    text-align: center;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.snowboards h3 {
+    text-align: center;
+    padding: 50px 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+.snowboards .fa, .features .fa {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.slider-board i {
+    font-size: 300px;
+}
+.slider-board {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*start mountains container*/
+.mountains-container {
+    background-image: url(..//images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 350px;
+    margin: 0;
+}
+.mountains h3 {
+    font-size: 50px;
+    color: #fff;
+    padding-top: 300px;
+    padding-left: 250px;
+    padding-bottom: 100px;
+    text-transform: uppercase
+}
+.mountains p {
+    color: #fff;
+    padding: 0 250px;
+    line-height: 2;
+}
+.mountains .mount-text {
+    padding-top: 50px;
+}
+/*end mountains container*/
+/*start features*/
+.features-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+}
+.features-images .images-box {
+    padding-right: 50px;
+}
+.features-images p {
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+/*end features*/
+/*form styles start*/
+#container-form h4 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+#container-form h4:hover {
+    color: blue;
+}
+form {
+    background-color: #c7c7c7;
+}
+#container-form {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+#container-form input[type="text"], input[type="email"], input[type="tel"], textarea[type="input"], button {
+    width: 500px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: 2px solid blue;
+    text-align: center;
+}
+#container-form textarea {
+    height: 150px;
+}
+#container-form button {
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: #000;
+}
+#container-form button:hover {
+    background-color: blue;
+    color: #fff;
+}
+/*form styles end*/
+/*footer start*/
+.footer-container {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    height: 400px;
+    margin: auto;
+    font-family: 'Akaya Telivigala', cursive;
+}
+.footer-container .footer-top a{
+    display: block;
+    color: #909090;
+    line-height: 2;
+    text-decoration: none;
+}
+.footer-container .footer-top {
+    padding-top: 100px;
+    padding-right: 100px;
+}
+.footer-container .footer-top h3 {
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.footer-container .footer-top h3:hover {
+    color: blue;
+}
+.footer-top input {
+    width: 200px;
+    height: 40px;
+    border-radius: 5PX;
+    border: 2px solid blue;
+}
+.footer-top .newsletter {
+    display: flex;
+}
+.footer-container .footer-top a.go {
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #c7c7c7;
+    font-weight: 600;
+    color: #000;
+    height: 40px;
+    width: 50px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid blue;
+}
+.footer-container .footer-top a.go:hover {
+    background-color: blue;
+    color: #fff;
+}
+.footer-container .social-media {
+    padding-top: 50px;
+    font-size: 30px;
+}
+.footer-container .social-media i {
+    padding-right: 20px;
+}
+.footer-container .social-media i:hover {
+    color: blue;
+}
+.footer-bottom {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    font-family: 'Akaya Telivigala', cursive;
+}
+.footer-bottom i {
+    padding-right: 15px;
+}
+/*Responsive*/
+    @media screen and (max-width: 768px) {
+    header {
+        height: 500px;
+    }
+    .hamburger-menu, .logo {
+        text-align: right;;
+        font-size: 40px;
+    }
+    nav {
+        display: block;
+    }
+    ul li {
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+    }
+    ul li a {
+        font-size: 30px;
+    }
+    header .shop {
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 30px;
+    }
+    .header-back {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .header-back h1 {
+        text-align: center;
+    }
+    .snowboards i {
+        display: none;
+    }
+    .snowboards .fa-times {
+        padding-bottom: 0;
+    }
+
+    .slider-board {
+        display: block;
+        text-align: center;
+    }
+    .slider-board img {
+        width: 400px;
+        height: 700px;
+        padding-top: 50px;
+        cursor: pointer;
+    }
+    .mountains-container {
+        padding-bottom: 20px;
+    }
+    .mountains h3 {
+        display: flex;
+        justify-content: center;
+        padding: 50px 20px;
+        text-align: center;
+    }
+    .mountains p {
+        padding: 0 20px;
+        text-align: center;
+    }
+    .features-images{
+        display: block; 
+    }
+    .images-box {
+        text-align: center;
+        padding-top: 20px;
+    }
+    .images-box img {
+        width: 70%;
+    }
+    .footer-container {
+        display: block;
+        width: 100%;
+        height: 100vh;
+    }
+    /*footer start*/
+    footer {
+        display: block;
+    }
+    .footer-container {
+        height: auto;
+    }
+    .footer-top h3 {
+        font-size: 35px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .footer-top a {
+        font-size: 25px;
+        text-align: center;
+    }
+    .newsletter {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .social-media {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .social-media i {
+        font-size: 50px;
+    }
+    .footer-bottom {
+        display: block;
+        text-align: center;
+    }
+    .footer-bottom p {
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
